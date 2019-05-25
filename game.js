@@ -211,7 +211,7 @@ function collisionHandler (bullet, alien) {
         scoreText.text = scoreString + score;
 
         enemyBullets.callAll('kill',this);
-        stateText.text = " Ai castigat!!! \n Cu un vot maine putem castiga toti";
+        stateText.text = " Ai castigat!!! \n Cu un vot azi putem castiga toti";
         stateText.visible = true;
 
         //the "click to restart" handler
@@ -242,7 +242,7 @@ function enemyHitsPlayer (player,bullet) {
         player.kill();
         enemyBullets.callAll('kill');
 
-        stateText.text=" Ai pierdut acum :( \n Cu un vot maine poti castiga ";
+        stateText.text=" Ai pierdut acum :( \n Cu un vot azi poti castiga ";
         stateText.visible = true;
 
         //the "click to restart" handler
