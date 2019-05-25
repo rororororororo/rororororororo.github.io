@@ -1,4 +1,9 @@
 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+ // some code..}else {
+    alert("Functioneaza doar pe PC")
+}else{
 var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
@@ -317,4 +322,8 @@ function restart () {
     //hides the text
     stateText.visible = false;
 
+}
+
+
+    
 }
